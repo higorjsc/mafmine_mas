@@ -1,0 +1,165 @@
+
+/* --------------------------------------IMAGENS-------------------------------------------------- */
+
+.img-superficie {
+  position: absolute;
+  top: 16%;
+  left: 2%;
+}
+
+.img-acesso {
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+#rampa {
+  top: 18.5%;
+  left: 25%
+}
+
+#rampa-pit {
+  top: 30%;
+  left: 44%;
+  height: 60%
+}
+
+#shaft {
+  top: 20.5%;
+  left: 25%;
+}
+
+#vent {
+  position: absolute;
+  top: 19%;
+  left: 68%;
+}
+
+#shaft-pit {
+  position: absolute;
+  top: 25.5%;
+  transform: scale(1.2);
+  left: 20%;
+}
+
+#vent-pit {
+  position: absolute;
+  top: 19.5%;
+  left: 68%;
+}
+
+#truck {
+  position: absolute;
+  display: none;
+  top: 16%;
+  left: 13%;
+  z-index: 3;
+  transform: rotate(4deg);
+}
+
+#orebody {
+  position: absolute;
+  top: 64%;
+  left: 15%;
+  z-index: 3;
+}
+
+#usina {
+  position: absolute;
+  top: 1%;
+  left: 69%;
+  z-index: 2;
+  transform: rotate(-3deg);
+}
+
+#usina-pit {
+  position: absolute;
+  top: 1%;
+  left: 69%;
+  z-index: 2;
+  transform: rotate(-2deg);
+}
+
+/* --------------------------------------------FLUXOGRAMA ---------------------------------------- */
+.div-fluxograma {
+  z-index: 5;
+  position: absolute;
+  border-radius: 5px;
+}
+  
+.div-fluxograma:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--cor-1);
+}
+  
+
+#fluxograma-logistica {
+  right: 74.8%;
+  top: 3.8%;
+  height: 8%;
+  width: 17%;
+}
+
+#fluxograma-rock {
+  right: 74.85%;
+  top: 21.5%;
+  height: 4.5%;
+  width: 17%;
+}
+
+#fluxograma-sm {
+  right: 74.85%;
+  top: 33.5%;
+  height: 8%;
+  width: 17%;
+}
+
+#fluxograma-open-pit {
+  right: 74.85%;
+  top: 51.5%;
+  height: 9%;
+  width: 17%;
+}
+
+#fluxograma-depth-1 {
+  right: 41.5%;
+  top: 52.6%;
+  height: 6.8%;
+  width: 17%;
+}
+
+#fluxograma-prod-1 {
+  right: 41.5%;
+  top: 67.2%;
+  height: 4.3%;
+  width: 17%;
+}
+
+
+#fluxograma-depth-2 {
+  right: 74.85%;
+  top: 67.3%;
+  height: 6%;
+  width: 17%;
+}
+
+#fluxograma-prod-2 {
+  right: 74.82%;
+  top: 81.1%;
+  height: 4.2%;
+  width: 17%;
+}
+
+#fluxograma-rampa {
+  right: 41.5%;
+  top: 89.2%;
+  height: 8%;
+  width: 17%;
+}
+
+#fluxograma-shaft {
+  right: 4%;
+  top: 52%;
+  height: 8%;
+  width: 17%;
+}

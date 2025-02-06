@@ -1,0 +1,167 @@
+* {
+  --cor-1: #650505d6;
+  --cor-2: #300202d6;
+  --shadow-apretada: -5px 0 5px  rgb(0 0 0 / 95%);
+  --shadow-red: 0 0 10px #650505d6;
+  --borda-simples: 1pt solid black;
+}
+
+/* ------------------RADIOS (CANTO INFERIOR DIREITO) ----------------- */
+
+input[type='radio'] {
+  display: none;
+}
+
+.container-label {
+  position: relative;
+  grid-column: 2/3;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  line-height: 50px;
+  height: 100%;
+}
+
+.radio-1 {
+  grid-row: 1/2;
+}
+
+.radio-2 {
+  grid-row: 2/3;
+}
+
+.radio-label {
+  grid-column: 1/2;
+  position: absolute;
+  justify-self: center;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1pt solid var(--cor-1);
+}
+
+.radio-label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--cor-1);
+}
+
+.radio-label::before {
+  content: '';
+  grid-column: 1/2;
+  position: absolute;
+  justify-self: center;
+  top: 0.5px;
+  right: 2.2189px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(1.25px, 0.5px);
+}
+
+.radio-span {
+  grid-column: 2/3;
+  position: absolute;
+  display: block;
+}
+
+.radio-span-1 {
+  grid-row: 1/2;
+}
+
+.radio-span-2 {
+  grid-row: 2/3;
+}
+
+input[type='radio']:checked + .radio-label {
+  background-color: white; 
+}
+
+input[type='radio']:checked + .radio-label::before {
+  background-color: var(--cor-1); 
+}
+
+
+
+/* ------------------BOTÃO IMPRIMIR (CANTO INFERIOR DIREITO) ----------------- */
+
+#botao-imprimir {
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  transform: scale(0.8);
+  bottom: 1%;
+  right: 3.5%;
+
+}
+
+#botao-imprimir:hover {
+  cursor: pointer;
+  box-shadow: var( --shadow-red);
+  transform: scale(1.01);
+}
+
+/* ------------------SWITCH IDIOMA (CANTO SUPERIOR ESQUERDO) ----------------- */
+
+#checkbox-switch {
+  display: none;
+}
+
+#switch-texto {
+  color: white;
+  font: normal 8pt;
+  position: inherit;
+  top: 22%;
+  margin-left: 1px;
+  margin-right: 5px;
+  z-index: 2;
+}
+
+.switch-label {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+  background-color: var(--cor-1);
+  border-radius: 15px;
+  position: absolute;
+  top: 45px;
+  right: 2%;
+  box-shadow: var(--shadow-apretada)
+}
+
+.switch-label:hover {
+  box-shadow: 0 0 20px var(--cor-1);
+  font: 12pt;
+  font-weight: bold;
+}
+
+.switch-label::after {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.switch-label:hover::after {
+  box-shadow: 0 0 20px var(--cor-1);
+  font: 12pt;
+  font-weight: bold;
+}
+
+
+
+#checkbox-switch:checked + .switch-label::after {
+  transform: translateX(30px);
+}
+
+
+
