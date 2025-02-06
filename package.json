@@ -1,11 +1,17 @@
 {
-  "name": "clone",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eslintrc.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.50.0",
+    "eslint-plugin-vue": "^9.17.0"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.0.2"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  }
 }

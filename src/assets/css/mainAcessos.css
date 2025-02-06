@@ -1,0 +1,51 @@
+body{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 99.5%;
+    box-sizing: border-box;
+    margin: 2px;
+}
+main{
+    min-height: 840px;
+    max-height: 840px;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 5fr 5fr 9fr 7fr;
+    margin: 0.1%;
+    box-sizing: border-box;
+}
+.main-pop-up{
+    min-height: 300px;
+    max-height: 500px;
+}
+.header-container{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.footer-container{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2%;
+}
+
+.inputs{
+    grid-column: 2/3;
+}
+.switch-language{
+    position: absolute;
+    left: 41%;
+    top: 6.5%;
+}
+.fluxograma{
+    grid-column: 3/4;
+}
+
+.resultados{
+    grid-column: 4/5;
+}
